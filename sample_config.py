@@ -130,6 +130,8 @@ class Config(object):
     #
     CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
     CHROME_BIN = os.environ.get("CHROME_BIN", None)
+    MIRROR_ACE_API_KEY= os.environ.get("MIRROR_ACE_API_KEY")
+    MIRROR_ACE_API_TOKEN = os.environ.get("MIRROR_ACE_API_TOKEN")
 
 class Production(Config):
     LOGGER = False
