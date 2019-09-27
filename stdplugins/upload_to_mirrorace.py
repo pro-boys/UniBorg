@@ -126,7 +126,7 @@ async def _(event):
                                 step_two_upload_url,
                                 files=[("files", (file_name, chunk))],
                                 data=step_two_params,
-                                # headers=headers
+                                headers=headers
                             )
                             logger.info(response.content)
 
