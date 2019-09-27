@@ -118,7 +118,7 @@ async def _(event):
                             headers = {
                                 "Content-Range": str(len(chunk)),
                                 "Content-Length": str(len(step_two_params) + len(chunk)),
-                                # "Content-Type": "multipart/form-data"
+                                "Content-Type": "multipart/form-data"
                             }
 
                             # https://github.com/aio-libs/aiohttp/issues/3571#issuecomment-456528924
